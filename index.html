@@ -1,1 +1,39 @@
-<ul id="tasksList"></ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./css/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="plus-border">+</div>
+    <ul class="taskList">
+      <li>
+        <div class="cell">
+          <div class="side-scroll">
+            <ul class="arrow">
+              <li><i class="fa fa-angle-up click"></i></li>
+              <li><i class="fa fa-angle-down click"></i></li>
+            </ul>
+          </div>
+          <div class="content">
+            <ul class="label-cell">
+              <li class="task-label">Task Name</li>
+              <li><i class="fa fa-edit click" style="font-size: 17px"></i></li>
+            </ul>
+          </div>
+          <div class="features">
+            <i
+              class="fa fa-trash-o click"
+              style="font-size: 24px; display: table"
+            ></i>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

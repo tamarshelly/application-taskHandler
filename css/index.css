@@ -1,0 +1,82 @@
+ul.taskList {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.cell {
+  width: 400px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #c3c7e996;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.cell .content {
+  width: 70%;
+  display: inline-block;
+  height: inherit;
+}
+.cell .side-scroll {
+  width: 15%;
+  margin: 0 auto;
+  padding-right: 5px;
+  display: inline-block;
+  height: inherit;
+}
+.cell .features {
+  width: auto;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.task-label {
+  display: table;
+  font-size: 20px;
+}
+.fa-angle-up,
+.fa-angle-down {
+  font-size: 30px !important;
+  margin-bottom: 5px;
+}
+
+.cell .side-scroll ul.arrow {
+  list-style-type: none;
+  display: table;
+  width: inherit;
+  margin: 0 auto;
+  margin-top: 3px;
+  padding: 0;
+  height: inherit;
+}
+.cell .content .label-cell {
+  list-style-type: none;
+  display: table;
+  padding-top: 10px;
+  padding-left: 0;
+  text-align: left;
+  margin: 0;
+}
+.cell .content li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.fa fa-plus {
+  border: 1px solid #000000;
+}
+
+.plus-border {
+  background-color: #fff;
+  font-size: 35px;
+  border: 1px solid rgb(0, 0, 0);
+  height: 35px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 35px;
+}
+.click {
+  cursor: pointer;
+}
