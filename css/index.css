@@ -7,11 +7,14 @@ ul.taskList {
   list-style-type: none;
 }
 .cell {
-  width: 400px;
+  width: 320px;
   height: 70px;
   border-radius: 15px;
-  border: 2px solid #b0cbba;
-  background-color: #bee2cc; /*#c3c7e996;*/
+  /*border: 2px solid #b0cbba;
+   background-color: #bee2cc; #c3c7e996;*/
+  color: #efefef;
+  background: linear-gradient(135deg, rgb(36 88 83) 0%, rgb(92 151 134) 100%);
+  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -32,6 +35,7 @@ ul.taskList {
   padding-left: 0;
   text-align: left;
   margin: 0;
+  color: #ffffffc2;
 }
 .cell .content li {
   display: inline-block;
@@ -40,6 +44,8 @@ ul.taskList {
 .task-label {
   display: table;
   font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 /*~~~~~~ cell Task Side Scroll section ~~~~~~*/
 .cell .side-scroll {
@@ -48,6 +54,7 @@ ul.taskList {
   padding-right: 5px;
   display: inline-block;
   height: inherit;
+  color: #ffffffc2;
 }
 
 .cell .side-scroll ul.arrow {
@@ -69,7 +76,9 @@ ul.taskList {
 .cell .features {
   width: auto;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  color: #ffffffc2;
+  padding-left: 10px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~Input css~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
