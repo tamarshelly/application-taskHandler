@@ -1,10 +1,3 @@
-let tasks = [
-  { priority: 1, text: "finishing tasks Handler" },
-  { priority: 2, text: "second" },
-  { priority: 3, text: "third" },
-  { priority: 4, text: "forth" },
-];
-
 let indexPriority = 5;
 var contador = 0;
 
@@ -21,7 +14,7 @@ function newElement() {
       contador +
       '">' +
       inputValue +
-      '</li>  <li><i class="fa fa-edit click" onClick="onClickEdit(this)" style="font-size: 17px"></i></li> </ul> </div>' +
+      '<input type="checkbox" class="box" onclick="whenChecked(this)"/></ul> </div>' +
       '<div class="features">  <i class="fa fa-trash-o click" onClick="onDelete(this)" style="font-size: 24px; display: table"' +
       "></i> </div></div>";
     var li = document.createElement("li");
@@ -62,4 +55,11 @@ function onDelete(trash) {
 function onClickEdit(edit) {
   elem = edit.parentNode.parentNode.parentNode.parentNode.parentNode;
   // alert(elem.text);
+}
+function whenChecked(box) {
+  if (box.parentNode.className == "task-label checked") {
+    box.parentNode.className = "task-label";
+  } else {
+    box.parentNode.className = "task-label checked";
+  }
 }
